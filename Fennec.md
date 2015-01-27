@@ -4,6 +4,7 @@
 $ wget -q https://hg.mozilla.org/mozilla-central/raw-file/default/python/mozboot/bin/bootstrap.py && python bootstrap.py
 </pre>
 
+Choose to build "Firefox for Android" at the prompts.
 It will download the essential build environment in $HOME/.mozbuild/(included Android NDK and SDK and etc.)
 
 
