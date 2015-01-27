@@ -1,6 +1,5 @@
-##Build FireFox on Android (Fennec)
-
-#1.Run
+#Build FireFox on Android (Fennec)
+##1.Run
 <pre>
 $ wget -q https://hg.mozilla.org/mozilla-central/raw-file/default/python/mozboot/bin/bootstrap.py && python bootstrap.py
 </pre>
@@ -8,10 +7,10 @@ $ wget -q https://hg.mozilla.org/mozilla-central/raw-file/default/python/mozboot
 it will download the essential build environment in $HOME/.mozbuild/(included Android NDK and SDK and etc.)
 
 
-#2. Get Mozilla Central
+##2. Get Mozilla Central
 hg clone http://hg.mozilla.org/mozilla-central/
 
-#3. Paste following config into your mozconfig
+##3. Paste following config into your mozconfig
 <pre>
 # Build Firefox for Android:
 ac_add_options --enable-application=mobile/android
@@ -28,13 +27,13 @@ Notice that the terminal will show the mozconfig hint:
 ac_add_options --with-android-sdk="$HOME/.mozbuild/android-sdk-linux   without /platforms/android-21
 Please append on the path.
 
-#4. ./mach build
-#5. ./mach package
-#6. Get the packaged apk
+##4. ./mach build
+##5. ./mach package
+##6. Get the packaged apk
 From ./MOZILLA_CENTRAL/objdir-droid/dist/
 the file name will be called something like fennec-28.0a1.en-US.android-arm.apk
 
-7. Install APK
+##7. Install APK
 ./mach install or adb install 
 
 ## Reference
