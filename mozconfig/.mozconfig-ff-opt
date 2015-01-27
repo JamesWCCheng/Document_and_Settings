@@ -1,0 +1,5 @@
+. "$topsrcdir/browser/config/mozconfig"
+
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/../build/obj-ff-opt
+mk_add_options MOZ_MAKE_FLAGS="-j4 -s"
+mk_add_options AUTOCLOBBER=1

@@ -1,0 +1,15 @@
+. "$topsrcdir/b2g/config/mozconfigs/common"
+
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/../build/obj-b2g-dbg
+mk_add_options MOZ_MAKE_FLAGS="-j4 -s"
+mk_add_options AUTOCLOBBER=1
+
+
+ac_add_options --enable-application=b2g
+ac_add_options --disable-libjpeg-turbo
+ac_add_options --enable-debug
+ac_add_options --disable-optimize
+
+#ac_add_options --enable-ipdl-tests
+
+ENABLE_MARIONETTE=1

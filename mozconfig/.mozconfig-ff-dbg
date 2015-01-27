@@ -1,0 +1,11 @@
+. "$topsrcdir/browser/config/mozconfig"
+
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/../build/obj-ff-dbg
+mk_add_options MOZ_MAKE_FLAGS="-j4 -s"
+mk_add_options AUTOCLOBBER=1
+
+ac_add_options --enable-debug
+ac_add_options --disable-optimize
+#ac_add_options --enable-ipdl-tests
+
+ENABLE_MARIONETTE=1
