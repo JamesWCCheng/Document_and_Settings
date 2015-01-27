@@ -11,7 +11,7 @@ it will download the essential build environment in $HOME/.mozbuild/(included An
 hg clone http://hg.mozilla.org/mozilla-central/
 
 ##3. Paste following config into your mozconfig
-<pre>
+```cpp
 # Build Firefox for Android:
 ac_add_options --enable-application=mobile/android
 ac_add_options --target=arm-linux-androideabi
@@ -21,7 +21,7 @@ ac_add_options --with-android-sdk="$HOME/.mozbuild/android-sdk-linux/platforms/a
 ac_add_options --with-android-ndk="$HOME/.mozbuild/android-ndk-r8e"
 
 mk_add_options MOZ_OBJDIR=./objdir-droid
-<pre>
+```
 
 Notice that the terminal will show the mozconfig hint:
 ac_add_options --with-android-sdk="$HOME/.mozbuild/android-sdk-linux   without /platforms/android-21
