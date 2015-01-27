@@ -38,6 +38,6 @@ the file name will be called something like fennec-28.0a1.en-US.android-arm.apk.
 ./mach install or use adb install directly.
 
 ## Reference
-<a name="Mobile/Fennec/Android" title="Build FireFox on Android (Fennec)" target="_blank" https://wiki.mozilla.org/Mobile/Fennec/Android">Build FireFox on Android (Fennec)</a>
+<a name="Mobile/Fennec/Android" title="Build FireFox on Android (Fennec)" target="_blank" href="https://wiki.mozilla.org/Mobile/Fennec/Android">Build FireFox Browser on Android (Fennec)</a>
 
 
