@@ -18,8 +18,9 @@ dumpPatchwithHGFormat()
 {
   gitpatch=$(git format-patch $1 -U8)
   git2hg $gitpatch
-}
 
+
+alias updatemaster='git checkout master && git fetch mozilla master && git merge mozilla/master'
 alias hgpatch=dumpPatchwithHGFormat
 alias patch_g2h=genPatch
 alias b2go='export MOZCONFIG=`pwd`/.mozconfig-b2g-opt'
