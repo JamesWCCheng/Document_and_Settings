@@ -17,8 +17,8 @@ hgQueuePurge()
 dumpPatchwithHGFormat()
 {
   gitpatch=$(git format-patch $1 -U8)
-  git2hg $gitpatch
-
+  git2hg $gitpat
+}
 
 alias updatemaster='git checkout master && git fetch mozilla master && git merge mozilla/master'
 alias hgpatch=dumpPatchwithHGFormat
