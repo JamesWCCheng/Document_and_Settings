@@ -4,6 +4,23 @@
   mv $1 ~/Projects/hg_patch/
 }
 
+git2hg()
+{
+  git patch-to-hg-patch $1
+}
+
+hgQueuePurge()
+{
+  hg qq --purge $1
+}
+
+dumpPatchwithHGFormat()
+{
+  gitpatch=$(git format-patch $1 -U8)
+  git2hg $gitpatch
+}
+
+alias hgpatch=dumpPatchwithHGFormat
 alias patch_g2h=genPatch
 alias b2go='export MOZCONFIG=`pwd`/.mozconfig-b2g-opt'
 alias b2gd='export MOZCONFIG=`pwd`/.mozconfig-b2g-dbg'
