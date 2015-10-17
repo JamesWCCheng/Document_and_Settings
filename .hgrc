@@ -1,0 +1,23 @@
+[default]
+qseries = -v -s
+
+[extensions]
+mq =
+
+[diff]
+git = 1
+unified = 8
+showfunc = 1
+
+[paths]
+try = ssh://hg.mozilla.org/try
+
+[ui]
+username = James Cheng <jacheng@mozilla.com>
+
+[extensions]
+rebase =
+mq =
+mqext = ~/lib/hg/mqext
+color =
+purge =
