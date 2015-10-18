@@ -32,7 +32,7 @@ alias b2go='export MOZCONFIG=`pwd`/.mozconfig-b2g-opt'
 alias b2gd='export MOZCONFIG=`pwd`/.mozconfig-b2g-dbg'
 alias ffd='export MOZCONFIG=`pwd`/.mozconfig-ff-dbg'
 alias ffo='export MOZCONFIG=`pwd`/.mozconfig-ff-dbg'
-alias git=hub
+#alias git=hub
 alias g2h=git2hg
 alias pushtry='hg push -f -rtip try'
 alias tryb2g='hg qnew try -m  "try: -b do -p emulator,emulator-jb,emulator-kk,emulator-l,linux32_gecko,linux64_gecko,macosx64_gecko,win32_gecko -u all -t none"'
