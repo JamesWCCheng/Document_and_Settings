@@ -25,6 +25,35 @@ hgupdate()
   hg qq patches
   hg pull -u
 }
+
+  hg pull -u
+}
+
+sc()
+{
+  grep -i -r  --include='*' $1 .
+}
+
+scxin()
+{
+  grep -i -r  --include=$2 $1 .
+}
+
+scxinpath()
+{
+  grep -i -r  --include='*' "$1" $2
+}
+
+ff()
+{
+  find . -name $1
+}
+
+ffilefrom()
+{
+  find $2 -name $1
+}
+
 alias updatemaster='git checkout master && git fetch mozilla master && git merge mozilla/master'
 alias hgpatch=dumpPatchwithHGFormat
 alias patch_g2h=genPatch
@@ -40,3 +69,4 @@ alias tryall='hg qnew try -m "try: -b do -p all -u all -t none"'
 alias popall='hg qpop -a'
 alias hgpurge=hgQueuePurge
 alias ptt='luit -encoding big5 telnet ptt.cc'
+alias cleanbuild='rm -rf out && rm -rf objdir-gecko && ./build.sh 2>error.log'
